@@ -54,11 +54,11 @@ st.caption("""The STR investment evaluation app helps you decide if a property i
 st.markdown("### 📊 Investment metrics:")
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.metric(label="Net Present Value", value=round(npv[9],0), delta=0.0, help="Net Present Value (NPV) is a way to see if an investment will make you money. It's like adding up all the money you'll get in the future from your investment, plus the money you'll get when you sell the investment at the end, and then subtracting the amount of money you originally put into the investment. If the number you get is positive, it means you'll make a profit on the investment. But if the number is negative, it means you won't make a profit and it might not be a good investment.")
+    st.metric(label="Net Present Value", value=round(npv[9],0), help="Net Present Value (NPV) is a way to see if an investment will make you money. It's like adding up all the money you'll get in the future from your investment, plus the money you'll get when you sell the investment at the end, and then subtracting the amount of money you originally put into the investment. If the number you get is positive, it means you'll make a profit on the investment. But if the number is negative, it means you won't make a profit and it might not be a good investment.")
 with col2:
-    st.metric(label="Internal Rate of Return % (IRR)", value=round(npv[11]*100,0), delta=0.0, help="This is the rate of return you receive from your investment each year")
+    st.metric(label="Internal Rate of Return % (IRR)", value=round(npv[11]*100,0), help="This is the rate of return you receive from your investment each year")
 with col3:
-    st.metric(label="First Year Monthly Net Income", value=round(npv[6][1]/12, 0), delta=0.0, help="This is the first year net income you will receive from your property after all expenses are paid.")
+    st.metric(label="First Year Monthly Net Income", value=round(npv[6][1]/12, 0), help="This is the first year net income you will receive from your property after all expenses are paid.")
 
 
 st.markdown('### 💰 Annual Cashflows by Year:')
