@@ -77,4 +77,4 @@ st.write('2. **Down payment** will be', round(down_payment*purchase_price,0), 'U
 st.write('3. **Closing costs** will be', round(closing_cost_pct*purchase_price,0), 'USD')
 st.write('4. **Monthly mortgage payment** (principal + interest) will be', np.round((npv[2]/12)[0]))
 st.write('5. **Monthly Operating Expenses**', np.round((home_expenses/12)[0]), 'which includes HOA, internet, taxes, utilities, home insurance, and repairs')
-st.write('7. **Profit from sale** of property at year 10',round(npv[1],0), 'USD')
+st.write('6. **Profit from sale** of property at year 10',round(npv[1],0), 'USD')
