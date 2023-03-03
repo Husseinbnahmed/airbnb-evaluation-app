@@ -2,9 +2,8 @@
 import numpy as np
 import pandas as pd
 # import numpy_financial as npf
-
 import numpy_financial as npf
-import matplotlib.pyplot as plt
+
 
 def future_rents(Avg_daily_rate, Occupancy_rate, Ann_rent_growth):
     
