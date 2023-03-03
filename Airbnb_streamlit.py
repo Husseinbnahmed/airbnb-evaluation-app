@@ -4,7 +4,7 @@ import pandas as pd
 import Airbnb as bnb
 import streamlit as st
 
-st.set_page_config(layout="wide")
+
 
 # set the title of the application
 st.title("Short Term Rental Evaluation App 🏠")
